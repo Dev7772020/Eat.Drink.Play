@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat";
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(187, 255, 0);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+.cursor-blur {
+    height: 250px;
+    width: 250px;
+    background-color: rgba(187, 255, 0, 0.8);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(150px);
+    z-index: -50;
+}
+
+video {
+    position: fixed;
+    width: 100%;
+    z-index: -99;
+}
+
+.navBar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 20px 130px;
+    z-index: 10;
+}
+
+.navContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-left: 30px;
+}
+
+.navContent h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navBar img {
+    height: 70px;
+}
+
+.main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -52;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page1 h1 {
+    font-size: 100px;
+    color: white;
+    position: relative;
+}
+
+.page1 h1::before {
+    content: "EAT.DRINK.PLAY.";
+    position: absolute;
+    color: black;
+    z-index: -1;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px rgb(187, 255, 0);
+}
+
+.page1 h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.page1 p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 70%;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+marquee {
+    font-size: 80px;
+    display: flex;
+    -webkit-text-stroke: 2px white;
+    font-size: 90px;
+    font-weight: 900;
+}
