@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "dm sans";
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: black;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 160px;
+}
+
+.venue::before{
+    content: ("assets/our-vanue.svg");
+}
